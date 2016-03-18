@@ -1,3 +1,4 @@
+#include <fstream>
 #include <iostream>
 #include <QFile>
 
@@ -7,13 +8,12 @@ int main()
   QFile f(":/images/HelloWorld.png");
   if (QFile::exists(filename.c_str()))
   {
-    std::cerr << "filename '" << filename << "' must not exist beforehand";
-    return 1;
+    std::remove(filename.c_str());
   }
   f.copy("HelloWorld.png");
   if (!QFile::exists(filename.c_str()))
   {
-    std::cerr << "filename '" << filename << "' must exist after";
-    return 2;
+    std::cerr << "filename '" << filename << "' must be created\n";
+    return 1;
   }
 }
