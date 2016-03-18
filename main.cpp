@@ -1,11 +1,19 @@
-#include "dialog.h"
-#include <QApplication>
+#include <iostream>
+#include <QFile>
 
-int main(int argc, char *argv[])
+int main()
 {
-  QApplication a(argc, argv);
-  Dialog w;
-  w.show();
-
-  return a.exec();
+  const std::string filename = "HelloWorld.png";
+  QFile f(":/images/HelloWorld.png");
+  if (QFile::exists(filename.c_str()))
+  {
+    std::cerr << "filename '" << filename << "' must not exist beforehand";
+    return 1;
+  }
+  f.copy("HelloWorld.png");
+  if (!QFile::exists(filename.c_str()))
+  {
+    std::cerr << "filename '" << filename << "' must exist after";
+    return 2;
+  }
 }
