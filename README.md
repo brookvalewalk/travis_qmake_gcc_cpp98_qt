@@ -14,5 +14,10 @@ The goal of this project is to have a clean Travis CI build, with specs:
  * Code coverage: none
  * Source: QDialog with Qt resource file
 
+More complex builds:
+ * C++11: [travis_qmake_gcc_cpp11_qt](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp11_qt)
+ * Tested by QTest: [travis_qmake_gcc_cpp98_qt_qtest](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98_qt_qtest)
+ * Tested by LDTP: [travis_qmake_gcc_cpp98_qt_ldtp](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98_qt_ldtp)
+
 Less complex builds:
  * STL only: [travis_qmake_gcc_cpp98](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98)
