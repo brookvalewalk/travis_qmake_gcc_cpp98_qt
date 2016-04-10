@@ -8,5 +8,7 @@ before_script:
   - sleep 3 # give xvfb some time to start
 
 script: 
- - ./build.sh
+ - ./build_qt4.sh
+ - ./travis_qmake_gcc_cpp98_qt
+ - ./build_qt5.sh
  - ./travis_qmake_gcc_cpp98_qt
