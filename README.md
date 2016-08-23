@@ -21,3 +21,5 @@ More complex builds:
 
 Less complex builds:
  * STL only: [travis_qmake_gcc_cpp98](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98)
+ * Use only Qt4 [travis_qmake_gcc_cpp98_qt4](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98_qt4)
+ * Use only Qt5 [travis_qmake_gcc_cpp98_qt5](https://www.github.com/richelbilderbeek/travis_qmake_gcc_cpp98_qt5)
